@@ -1,0 +1,70 @@
+/* 清除默认样式 */
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    cursor: none;
+}
+a{
+    text-decoration: none;
+}
+/* 字体 */
+@font-face {
+    font-family: "阿里妈妈方圆体 VF Regular";src: url("//at.alicdn.com/wf/webfont/153FQ18Pb64k/vjAX7FSZmniO.woff2") format("woff2"),
+    url("//at.alicdn.com/wf/webfont/153FQ18Pb64k/ERT1JZGkrM36.woff") format("woff");
+    font-display: swap;
+  }
+/* 设置主页背景 */
+body{
+    width: 100%;
+    height: 1200px;
+    background: url(../images/bgc5.jpg) no-repeat center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    position: relative;
+}
+canvas{
+    width: 100%;
+    height: 100%;
+}
+.JumpBox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 700px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+.JumpBox>div{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-color: rgba(94, 83, 83, .7);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.JumpBox>div>a{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    line-height: 180px;
+    border-radius: 180px;
+    box-shadow: 4px 4px rgba(245, 241, 241, 0.7);
+    font-family: "阿里妈妈方圆体 VF Regular"
+}
+#img_angel{
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+}

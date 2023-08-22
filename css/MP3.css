@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* body{
+    height: 100%;
+    width: 100%;
+    background-image: url(../images/MP3_BGC.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+} */
+canvas{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.content{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#img{
+    width: 400px;
+    height: 200px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 20px;
+}
+#img img{
+   flex: 3;
+   width: 80px;
+   height: 200px;
+   opacity: .5;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music-plaer</title>
+    <link rel="stylesheet" href="./css/MP3.css">
+    <link rel="stylesheet" href="css/lanrenzhijia.css" type="text/css" />
+    <link rel="stylesheet" href="./iconfont/list/iconfont.css">
+    <style>
+      body{
+          height: 100%;
+          width: 100%;
+          background-image: url(./images/MP3_BGC.jpeg);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 100% 100%;
+          background-attachment: fixed;
+          display: flex;
+          justify-content: space-around;
+          flex-direction: column;
+      }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="Music">
+            <div style="text-align:center;clear:both">
+                </div>
+                <div class="music-player">
+                        <div class="music-player">
+                          <div class="info">
+                            <div class="left"> <a href="javascript:;" class="icon-shuffle"></a> <a href="javascript:;" class="icon-heart"></a> </div>
+                            <div class="center">
+                              <div class="jp-playlist">
+                                <ul>
+                                  <li></li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="right"> <a href="javascript:;" class="icon-repeat"></a> <a href="javascript:;" class="icon-share"></a> </div>
+                            <div class="progress jp-seek-bar"> <span class="jp-play-bar" style="width: 0%"></span> </div>
+                          </div>
+                          <div class="controls">
+                            <div class="current jp-current-time">00:00</div>
+                            <div class="play-controls"> 
+                                <a href="javascript:;" class="icon-previous jp-previous" title="previous"></a> 
+                                <a href="javascript:;" class="icon-play jp-play" title="play"></a> 
+                                <a href="javascript:;" class="icon-pause jp-pause" title="pause"></a> 
+                                <a href="javascript:;" class="icon-next jp-next" title="next"></a> 
+                             </div>
+                            <div class="volume-level jp-volume-bar"> 
+                                <span class="jp-volume-bar-value" style="width: 0%"></span> 
+                                    <a href="javascript:;" class="icon-volume-up jp-volume-max" title="max volume"></a> 
+                                    <a href="javascript:;" class="icon-volume-down jp-mute" title="mute"></a> 
+                            </div>
+                          </div>
+                          <div id="jquery_jplayer" class="jp-jplayer"></div>
+                        </div>
+                </div>
+        </div>
+    </section>
+    <section class="content">
+      <div id="img">
+        <img src="./images/MP3_BGC.jpeg" alt="">
+        <img src="./images/MP3_BGC2.jpg" alt="">
+        <img src="./images/MP3_BGC3.jpg" alt="">
+        <img src="./images/MP3_BGC4.jpg" alt="">
+      </div>
+    </section>
+    <script>
+        // 获取所有img元素
+        let img = document.querySelectorAll('img')
+        // img是一个假数组
+        for(let i = 0;i<img.length;i++){
+            img[i].onclick = function(){
+                console.log(this.src)
+                //this.src就是我们点击图片的路径
+                //将这个路径this.src赋予body就ok了
+                document.body.style.backgroundImage='url('+this.src+')' 
+            }
+        }
+    </script>
+    <script src="js/jquery.min.js"></script>
+    <script src='js/jquery.jplayer.min.js'></script>
+    <script src='js/jplayer.playlist.min.js'></script>
+    <script src="js/lanrenzhijia.js"></script>
+</body>
+</html>
