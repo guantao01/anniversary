@@ -16,7 +16,7 @@ $(document).ready(function(){
       poster: "http://33.media.tumblr.com/bf9dc125a47dcca91ce5b3575bc3ba92/tumblr_nbmb3j8nU51sq3g2zo1_500.png"
     },{
       title:"不要忘记我爱你",
-      mp3: "file:///D:/zhuo/anniversary/redio/%E4%B8%8D%E8%A6%81%E5%BF%98%E8%AE%B0%E6%88%91%E7%88%B1%E4%BD%A0.m4a",
+      mp3: "https://wx.mail.qq.com/ftn/download?func=3&key=cacd0e35a86c6664f8be4a3537356232792c783535356232101d1c4107560053560249545653501f50565d03180d0651511f5256065450560007535305537b32d18ae9dd93b4878daddaca85d3bdf3d5bd838088951b0f065426ce6a327445ac8b393c00ed79e5130186ac1232f8&code=52d555b2&k=cacd0e35a86c6664f8be4a3537356232792c783535356232101d1c4107560053560249545653501f50565d03180d0651511f5256065450560007535305537b32d18ae9dd93b4878daddaca85d3bdf3d5bd838088951b0f065426ce6a327445ac8b393c00ed79e5130186ac1232f8&fweb=1&cl=1",
       // oga: "http://www.jplayer.org/audio/ogg/Miaow-07-Bubble.ogg",
       poster: "http://31.media.tumblr.com/810b1125a8b9e9f192d009ef58dceb07/tumblr_nbe8wsmKuz1rknpqyo1_500.jpg"
   },{
